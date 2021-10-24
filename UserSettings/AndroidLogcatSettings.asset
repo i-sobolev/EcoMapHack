@@ -1,0 +1,161 @@
+{
+    "m_SelectedDeviceId": "98161FFAZ001TT",
+    "m_SelectedPackage": {
+        "deviceId": "98161FFAZ001TT",
+        "name": "com.DefaultCompany.EcoMap",
+        "processId": 26526,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.CRMhack",
+            "processId": 24896,
+            "exited": true
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.CRMhack",
+            "processId": 25904,
+            "exited": true
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.CRMhack",
+            "processId": 27203,
+            "exited": true
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.CRMhack",
+            "processId": 27723,
+            "exited": true
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.CRMhack",
+            "processId": 29193,
+            "exited": true
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.CRMhack",
+            "processId": 31326,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 6088,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 8058,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 8778,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 9192,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 9844,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 10294,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 11091,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 24491,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 26275,
+            "exited": false
+        },
+        {
+            "deviceId": "98161FFAZ001TT",
+            "name": "com.DefaultCompany.EcoMap",
+            "processId": 26526,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}

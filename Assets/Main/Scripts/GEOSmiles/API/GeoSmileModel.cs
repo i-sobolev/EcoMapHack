@@ -1,4 +1,5 @@
-﻿public class GeoSmileModel
+﻿[System.Serializable]
+public class GeoSmileModel
 {
     public int Id;
     public int UserId;

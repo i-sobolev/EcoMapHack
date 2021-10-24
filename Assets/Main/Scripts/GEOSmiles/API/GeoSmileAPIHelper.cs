@@ -1,24 +1,20 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
 public class GeoSmileAPIHelper : MonoBehaviour
 {
+    public Action<List<GeoSmileModel>> DataReceived;
+    
     private readonly string _apiUri = "http://weather.makievksy.ru.com/api/UserGeosmile";
 
     private void Start()
     {
         Get().Start(this);
-
-        var testGeoSmile = new GeoSmileModel
-        {
-            GeosmileId = 1,
-            Latitude = 666,
-            Longitude = 666
-        };
-
-        Post(testGeoSmile).Start(this);
     }
 
     public IEnumerator Get()
@@ -38,7 +34,11 @@ public class GeoSmileAPIHelper : MonoBehaviour
             string json = Encoding.UTF8.GetString(result);
 
             JsonHelper.FixJson(ref json);
+
             Debug.Log(json);
+
+            var requestResult = JsonHelper.FromJson<GeoSmileModel>(json);
+            DataReceived?.Invoke(requestResult.ToList());
         }
     }
 

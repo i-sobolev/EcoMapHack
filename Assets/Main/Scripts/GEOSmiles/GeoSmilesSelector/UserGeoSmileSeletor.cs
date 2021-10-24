@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class UserGeoSmileSeletor : MonoBehaviour
 {
-    public Action<GeoSmile> Selected; 
+    public static Action<GeoSmile> Selected; 
 
     [SerializeField] private GeoSmilesConfig _geoSmilesConfig;
     [Space]
@@ -19,8 +19,15 @@ public class UserGeoSmileSeletor : MonoBehaviour
     private void Start()
     {
         InitializeButtons();
+
+        ARPlaneRaycaster.PlaneRaycasted += OnPlaneRaycasted;
     }
 
+    private void OnPlaneRaycasted(Vector3 position)
+    {
+        Show();
+        ARPlaneRaycaster.PlaneRaycasted -= OnPlaneRaycasted;
+    }
 
     public void Show()
     {
@@ -64,8 +71,6 @@ public class UserGeoSmileSeletor : MonoBehaviour
 
             currentButton.Selected += OnSomeButtonSelected;
         }
-
-        Show();
     }
 
     private void OnSomeButtonSelected(UserGeoSmileButton button)
@@ -73,5 +78,7 @@ public class UserGeoSmileSeletor : MonoBehaviour
         Hide(button);
 
         Selected?.Invoke(_geoSmilesConfig.GeoSmiles.First(geoSmile => geoSmile.Id == button.LinkedGeoSmileId));
+
+        gameObject.SetActive(false);
     }
 }
